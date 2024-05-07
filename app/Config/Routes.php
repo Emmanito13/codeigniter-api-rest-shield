@@ -27,3 +27,5 @@ $routes->group("api/auth/", ['namespace' => 'App\Controllers\Api\Auth'], functio
      // GET
      $routes->get("logout","AuthController::logout", ["filter" => "accessauth"]);     
 });
+
+// $routes->group("api/employee/", ['namespace' => ''])
