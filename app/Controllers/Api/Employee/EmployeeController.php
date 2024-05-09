@@ -12,7 +12,7 @@ class EmployeeController extends ResourceController
     // POST
     public function addEmployee() {
         $rules = [
-
+            
         ];
     }
 

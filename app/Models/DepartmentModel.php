@@ -4,23 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class EmployeeModel extends Model
+class DepartmentModel extends Model
 {
-    protected $table            = 'employee';
-    protected $primaryKey       = 'idE';
+    protected $table            = 'departments';
+    protected $primaryKey       = 'id_dep';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'name',
-        'lastname',
-        'birthdate',
-        'gender',
-        'adress',
-        'phone',
-        'curp',
-        'profile_image_src'        
+        'department'
     ];
 
     protected bool $allowEmptyInserts = false;
