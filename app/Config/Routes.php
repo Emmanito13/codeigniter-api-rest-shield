@@ -51,3 +51,19 @@ $routes->group("api/department/", ['namespace' => 'App\Controllers\Api\Departmen
     $routes->delete("delete-department/(:num)","DepartmentController::deleteDepartment/$1", ["filter" => "accessauth"]);
     
 });
+
+$routes->group("api/job/", ['namespace' => 'App\Controllers\Api\Job'], function ($routes){           
+
+    // POST
+    $routes->post("create-job","JobController::addJob", ["filter" => "accessauth"]);    
+
+    // GET
+    $routes->get("list-job","JobController::listJobs", ["filter" => "accessauth"]);    
+
+    // PUT
+    $routes->put("update-job/(:num)","JobController::updateJob/$1", ["filter" => "accessauth"]);
+
+    // DELETE
+    $routes->delete("delete-job/(:num)","JobController::deleteJob/$1", ["filter" => "accessauth"]);
+    
+});

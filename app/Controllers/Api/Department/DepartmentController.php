@@ -136,6 +136,7 @@ class DepartmentController extends ResourceController
             ]);
         }
 
+        // delete department
         if (!$departmentModel->delete($id_dep)) {
             return $this->respondCreated([
                 'status' => false,
