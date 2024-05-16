@@ -4,23 +4,20 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class EmployeeModel extends Model
+class WorkModel extends Model
 {
-    protected $table            = 'employee';
-    protected $primaryKey       = 'idE';
+    protected $table            = 'work';
+    protected $primaryKey       = 'id_job';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'name',
-        'lastname',
-        'birthdate',
-        'gender',
-        'address',
-        'phone',
-        'curp',
-        'profile_image_src'
+        'idE',        
+        'date_admission',
+        'salary',
+        'department',
+        'job',
     ];
 
     protected bool $allowEmptyInserts = false;
